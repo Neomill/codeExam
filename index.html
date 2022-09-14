@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="table">
+            <div class="tableHeading">
+                <button id="createNew">new</button>
+            </div>
+            <div>
+                <table id="table">
+                    <th>
+                        <tr>
+                            <th>
+                                id
+                            </th>
+                            <th>
+                                article title
+                            </th>
+                            <th>
+                                content
+                            </th>
+                            <th>
+                                date created
+                            </th>
+                            <th>
+                                actions
+                            </th>
+                        </tr>
+                    </th>
+                    <tbody id="tbody">
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                test
+                            </td>
+                            <td>
+                                content
+                            </td>
+                            <td>
+                                july 05
+                            </td>
+                            <td>
+                                <button>view</button>
+                                <button>delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="createModal" id="createModal" id="">
+            <form id="form">
+                <h1>add post</h1>
+                title<input type="text" name="title">
+                content: <textarea name="content" id="" cols="30" rows="10"></textarea>
+                <div>
+                    <button>Submit</button>
+                    <button id="closeBtn">close</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="updateModal" id="updateModal">
+            <form id="formUpdate">
+                <h1>update post</h1>
+                title<input type="text" name="title">
+                content: <textarea name="content" id="" cols="30" rows="10"></textarea>
+                <div>
+                    <button>update</button>
+                    <button id="closeBtnUpdate">close</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="./database.js"></script>
+    <script src="./script.js">
+    </script>
+</body>
+</html>

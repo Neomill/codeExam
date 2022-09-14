@@ -1,0 +1,64 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.createModal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #76D4BD;
+}
+
+table{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.table{
+    width: 60%;
+}
+
+th{
+    background-color: #76D4BD;
+    border: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.updateModal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #76D4BD;
+}
